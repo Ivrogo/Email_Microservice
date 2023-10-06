@@ -16,14 +16,14 @@ class TestTemplateBuilder(unittest.TestCase):
         actual_template = template_builder.build_template(template_data, company_logo_path)
         
         expected_template = f"""
-        <html>
-            <head></head>
-            <body>
-                <img src="file://{company_logo_path}" alt="Logo de la empresa">
-                <h1>Bienvenido, {template_data['name']}!</h1>
-                <p>{template_data['message']}</p>
-            </body>
-        </html>
+            <html>
+                <head></head>
+                <body>
+                    <img src="file://{company_logo_path}" alt="Logo de la empresa">
+                    <h1>Bienvenido, {template_data['name']}!</h1>
+                    <p>{template_data['message']}</p>
+                </body>
+            </html>
         """
         
         # Comprobamos si la plantilla generada coincide con la plantilla esperada
