@@ -6,8 +6,7 @@ class TestTemplateBuilder(unittest.TestCase):
     def test_build_template(self):
         # Datos de prueba
         template_data = {
-            'from': 'noreply.icesoft@gmail.com',
-            'name': 'er_jotx@hotmail.com',
+            'name': 'Ivan Rodriguez',
             'message': 'Hola, esto es un mensaje de prueba'
         }
         company_logo_path = 'email_service/template/x17.jpg'

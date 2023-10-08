@@ -1,16 +1,5 @@
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-
 class TemplateBuilder:
     def build_template(self, data, company_logo_path):
-        
-        # Crear el objeto MIMEMultipart
-        msg = MIMEMultipart()
-        msg['From'] = data['from']
-        msg['To'] = data['name']
-        msg['Subject'] = data['message']
-        
-        
         template = f"""
             <html>
                 <head></head>
